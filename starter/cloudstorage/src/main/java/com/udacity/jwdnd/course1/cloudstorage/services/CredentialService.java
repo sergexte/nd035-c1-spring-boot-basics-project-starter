@@ -63,7 +63,7 @@ public class CredentialService {
                     credential.getKey(),
                     credential.getPassword());
 
-            newCredential.setPassword(decryptedPassword(credential.getPassword(), credential.getKey()));
+            newCredential.setDecryptedPassword(decryptedPassword(credential.getPassword(), credential.getKey()));
             return newCredential;
         }).collect(Collectors.toList());
     }

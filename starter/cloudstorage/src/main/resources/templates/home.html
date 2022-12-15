@@ -150,7 +150,7 @@
                                         th:data-id="${credential.getCredentialId()}"
                                         th:data-url="${credential.getUrl()}"
                                         th:data-username="${credential.getUsername()}"
-                                        th:data-password="${credential.getPassword()}"
+                                        th:data-password="${credential.getDecryptedPassword()}"
                                         th:onclick="showCredentialModal(this.getAttribute('data-id'), this.getAttribute('data-url'), this.getAttribute('data-username'), this.getAttribute('data-password'))">
                                     Edit
                                 </button>
