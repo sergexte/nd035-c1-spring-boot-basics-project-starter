@@ -35,7 +35,7 @@ public class FileService {
         file.setFilename(fileUpload.getOriginalFilename());
         file.setContentType(fileUpload.getContentType());
         file.setFileSize(Long.toString(fileUpload.getSize()));
-        file.setData(fileUpload.getBytes());
+        file.setFiledata(fileUpload.getBytes());
 
         return fileMapper.insert(file);
     }

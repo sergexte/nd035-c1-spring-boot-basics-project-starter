@@ -14,7 +14,7 @@ public interface FileMapper {
     File getFileByName(String fileName);
 
     @Insert("INSERT INTO FILES (filename, contenttype, filesize, userid, filedata)" +
-            "VALUES(#{filename}, #{contentType}, #{fileSize}, #{userId}, #{data})")
+            "VALUES(#{filename}, #{contentType}, #{fileSize}, #{userId}, #{filedata})")
     @Options(useGeneratedKeys = true, keyProperty = "fileId")
     int insert(File file);
 
